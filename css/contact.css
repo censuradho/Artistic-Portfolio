@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    margin: 40px 0;
+    flex-direction: column;
+    width:70%;
+}
+input {
+    padding: 5px 10px;
+}
+input:nth-of-type(3) {
+    margin-top: 40px;
+}
+.button-form {
+    margin-top: 30px;
+    width: 100px;
+}

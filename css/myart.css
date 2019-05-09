@@ -1,0 +1,41 @@
+/* posicionei o container no centro da tela */
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    overflow: auto;
+}
+.grid-images {
+    display: flex;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.crop {
+    width: 30%;
+    padding: 0 5px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.crop:hover {
+    transition: 0.5s;
+    transform: scale(1.4);
+    width: 100%;
+}
+.crop:hover > img {
+    transition: 9s;
+    position: relative;
+    object-position: 10%;
+}
+.grid-images img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+    
+@media screen and (min-width: 750px) {
+    .grid-images img {
+        height: 400px;
+    }
+}
