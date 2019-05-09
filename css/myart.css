@@ -19,7 +19,7 @@
     transition: 0.2s;
 }
 .crop:hover {
-    transition: 0.5s;
+    transition: 0.2s;
     transform: scale(1.4);
     width: 100%;
 }
