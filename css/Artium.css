@@ -1,0 +1,217 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+p {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #212121; }
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+span {
+  color: #616161;
+  font-style: italic; }
+
+section {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.btnSection {
+  border: none;
+  background-color: #212121;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 14px;
+  align-self: flex-end;
+  cursor: pointer; }
+
+.btnSection:hover {
+  background-color: #BDBDBD;
+  color: #212121;
+  transition: 0.3s;
+  min-width: 40px; }
+
+.fa-bars {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer; }
+
+.btnMenu_open {
+  color: #616161; }
+
+.btnMenu_close {
+  padding: 20px 26px;
+  color: #E0E0E0;
+  transform: translateX(-100); }
+
+@media screen and (min-width: 700px) {
+  #btnMenu_open {
+    display: none; } }
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 26px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 1px 0 4px #616161;
+  background-color: #fff;
+  z-index: 2;
+  top: 0; }
+  .page-head h1 {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #616161; }
+
+.navegation ul {
+  display: flex;
+  overflow: auto; }
+.navegation a {
+  padding-right: 40px;
+  color: #212121;
+  display: block; }
+.navegation a:hover {
+  color: #BDBDBD; }
+
+@media screen and (max-width: 700px) {
+  .navegation {
+    display: none; } }
+.navegationMob {
+  z-index: 2;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: 0.5s; }
+  .navegationMob a {
+    display: block;
+    width: 100%;
+    padding: 20px 26px;
+    border-top: 1px solid #E0E0E0;
+    color: #616161;
+    transition: 0.5s; }
+  .navegationMob a:hover {
+    background-color: #E0E0E0; }
+  .navegationMob .lastA {
+    border-bottom: 1px solid #E0E0E0; }
+  .navegationMob .socialIcons {
+    padding: 20px 26px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    .navegationMob .socialIcons a {
+      color: #616161;
+      font-size: 1.5rem;
+      border: none;
+      background: none;
+      padding: 0;
+      text-align: center;
+      width: 40px;
+      cursor: pointer; }
+    .navegationMob .socialIcons .a:hover {
+      background: none; }
+
+.navegation_open {
+  transform: translatex(0); }
+
+@media screen and (min-width: 700px) {
+  .navegationMob {
+    display: none; } }
+header {
+  position: relative;
+  top: 0; }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-image: url(../../imagens/banner.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  alt: 'Vista aéria do centro da capital'; }
+  .hero h2 {
+    color: #272727;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .hero p {
+    text-align: center;
+    margin: 20px 0;
+    width: 70%;
+    color: #fff;
+    font-size: 1.3rem; }
+  .hero button {
+    height: 50px;
+    width: 200px;
+    border: 2px solid #272727;
+    background-color: #272727;
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem; }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  overflow: auto; }
+
+.grid-images {
+  display: flex;
+  overflow: hidden;
+  padding: 30px 0; }
+
+.crop {
+  width: 30%;
+  padding: 0 5px;
+  overflow: hidden;
+  transition: 0.5s; }
+
+.crop:hover {
+  transform: scale(1.4);
+  width: 100%; }
+
+.crop:hover > img {
+  transition: 9s;
+  position: relative;
+  object-position: 20%; }
+
+.grid-images img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px; }
+
+@media screen and (min-width: 750px) {
+  .grid-images img {
+    height: 400px; } }
+
+/*# sourceMappingURL=Artium.css.map */

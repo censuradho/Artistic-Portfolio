@@ -1,0 +1,43 @@
+@import '../colors';
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(../../imagens/banner.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    alt: 'Vista aéria do centro da capital';
+    h2 {
+        color: $primary-color;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    p {
+        text-align: center;
+        margin: 20px 0;
+        width: 70%;
+        color: $white;
+        font-size: 1.3rem;
+    }
+    button {
+        height: 50px;
+        width: 200px;
+        border: 2px solid $primary-color;
+        background-color: $primary-color;
+        color: $white;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
+
+
+

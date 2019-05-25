@@ -1,4 +1,3 @@
-/* posicionei o container no centro da tela */
 .grid {
     display: flex;
     flex-direction: column;
@@ -16,17 +15,16 @@
     width: 30%;
     padding: 0 5px;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 .crop:hover {
-    transition: 0.2s;
     transform: scale(1.4);
     width: 100%;
 }
 .crop:hover > img {
     transition: 9s;
     position: relative;
-    object-position: 10%;
+    object-position: 20%;
 }
 .grid-images img {
     width: 100%;

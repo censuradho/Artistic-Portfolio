@@ -1,0 +1,55 @@
+@import '../colors.scss';
+.navegationMob {
+    z-index: 2;
+    width: 70%;
+    height: 100%;
+    background-color: $white;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    a {
+        display: block;
+        width: 100%;
+        padding: 20px 26px;
+        border-top: 1px solid $light;
+        color: $dark;
+        transition: 0.5s;
+    }
+    a:hover {
+        background-color: $light;
+    }
+    .lastA {
+        border-bottom: 1px solid $light;
+    }
+    .socialIcons {
+        padding: 20px 26px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    
+        a {
+            color: $dark;
+            font-size: 1.5rem;
+            border: none;
+            background: none;
+            padding: 0;
+            text-align: center;
+            width: 40px;
+            cursor: pointer;
+        }
+        .a:hover {
+            background: none;
+        }
+
+    }
+}
+.navegation_open {
+    transform: translatex(0)
+}
+@media screen and (min-width: 700px) {
+    .navegationMob {
+        display: none;
+    }
+}
+
+
