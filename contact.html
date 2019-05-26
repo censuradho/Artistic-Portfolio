@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Artium | A painter from south America </title>
-    <link rel="preload" href="imagens/banner.jpg" as="image">
-    <link rel="stylesheet" href="css/Artium.css">
+    <title>Artium | Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
     <!-- Google Fonts - Roboto | Tangerine -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:300|Tangerine&display=swap" rel="stylesheet"> 
-    <!-- icones -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:300|Tangerine&display=swap" rel="stylesheet">
+    <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-<body id="body">
+<body>
     <header>
         <div class="page-head">
             <button class="fas fa-bars btnMenu_open" id="btnMenu_open"></button>
@@ -30,7 +29,7 @@
                 <button class="fas fa-bars btnMenu_close" id="btnMenu_close"></button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#myArt">My art</a></li>
+                    <li><a href="">My art</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="contact.html" class="lastA">Contact</a></li>
                 </ul>
@@ -40,37 +39,21 @@
                 </div>
             </nav>        
     </header>
-    <div class="hero" title="the image of a painter with his works in the background">
-        <h2>Here I'm</h2>
-        <p>in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa,placerat duis ultricies lacus sed</p>
-        <button>Contact me</button>
-    </div>
-    <main>
-        <section id="myArt" class="myArt">
-            <div class="grid">
-            <h3>My art</h3>
-            <span>in my image and likeness</span>
-            <div class="grid-images">
-                <div class="crop">
-                    <img src="imagens/picture1.jpg" alt="painting of ocean">
-                </div>
-                <div class="crop">
-                    <img src="imagens/picture2.jpg" alt="painting of ocean">
-                </div>
-                <div class="crop">
-                    <img src="imagens/picture3.jpg" alt="painting of cabin">
-                </div>
-                <div class="crop">
-                        <img src="imagens/picture4.jpg" alt="painting of cabin">
-                </div>
-                <div class="crop">
-                        <img src="imagens/picture5.jpg" alt="painting of cabin">
-                </div>  
+    <div class="container-contact">
+        <section>
+            <h1>Contact</h1>
+        <form class="form">
+            <div class="input-field">
+                <input type="text" id="name" placeholder="Name">
+                <label for="name">Entre here your name</label>
             </div>
-            <button class="btnSection">See more</button>
-        </div>
+            <div class="input-field">
+                    <input type="text" id="email" placeholder="E-mail">
+                    <label for="email">Entre here your E-mail</label>
+            </div>
+        </form>
         </section>
-    </main>
-    <script src="javascript/main.js"></script>
+    </div>
+<script src="javascript/main.js"></script>
 </body>
 </html>

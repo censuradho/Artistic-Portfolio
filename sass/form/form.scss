@@ -1,0 +1,43 @@
+@import '../colors.scss';
+section h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    color: $dark;
+}
+.form {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px;
+
+    input {
+        border: none;
+        border-bottom: 1px solid $primary-color-light;
+        box-shadow: 0 1px 0 $primary-color-light;
+        width:330px;
+        padding: 10px 0;
+        transition: 0.3s;
+    }
+    input:focus {
+        border-bottom: 1px solid $dark;
+        box-shadow:  0 1px 0 $dark;
+        color: $dark;
+    }
+    label {
+        font-size: 10pt;
+        color: $primary-color-light;
+        margin-top: 10px;
+        position: relative;
+        top: -60px;
+        font-weight: 400;
+    }
+    label:focus {
+        color: $dark;
+    }
+}
