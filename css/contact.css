@@ -182,7 +182,7 @@ section h1 {
   .input-field input:required:valid {
     color: #81C784;
     border-bottom: 1px solid #81C784; }
-  .input-field input:required:invalid {
+  .input-field input:required:focus:invalid {
     color: #E57373;
     border-bottom: 1px solid #E57373; }
   .input-field label {

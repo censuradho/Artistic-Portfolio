@@ -45,7 +45,7 @@ section h1 {
         color: $valid;
         border-bottom: 1px solid $valid;
     }
-    input:required:invalid {
+    input:required:focus:invalid {
         color: $invalid;
         border-bottom: 1px solid $invalid;
     }
