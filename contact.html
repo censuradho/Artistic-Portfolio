@@ -48,9 +48,14 @@
                 <label for="name">Entre here your name</label>
             </div>
             <div class="input-field">
-                    <input type="text" id="email" placeholder="E-mail">
+                    <input type="email" id="email" placeholder="E-mail" required="required" pattern="[+ a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     <label for="email">Entre here your E-mail</label>
             </div>
+            <div class="input-field">
+                <input type="text" id="message" placeholder="Message">
+                <label for="message">Entre here your Message</label>
+                <button class="btnSection">send</button>
+        </div>
         </form>
         </section>
     </div>

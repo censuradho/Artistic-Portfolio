@@ -14,13 +14,25 @@ section h1 {
 .input-field {
     display: flex;
     flex-direction: column;
-    margin: 40px 20px;
+    margin: 30px 20px;
+    position: relative;
+
+    button {
+        // border: none;
+
+        // background-color: $primary-color-dark;
+        // color: $white;
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+        // cursor: pointer;
+    }
 
     input {
         border: none;
         border-bottom: 1px solid $primary-color-light;
         box-shadow: 0 1px 0 $primary-color-light;
-        width:330px;
+        width:300px;
         padding: 10px 0;
         transition: 0.3s;
     }
@@ -28,6 +40,14 @@ section h1 {
         border-bottom: 1px solid $dark;
         box-shadow:  0 1px 0 $dark;
         color: $dark;
+    }
+    input:required:valid {
+        color: $valid;
+        border-bottom: 1px solid $valid;
+    }
+    input:required:invalid {
+        color: $invalid;
+        border-bottom: 1px solid $invalid;
     }
     label {
         font-size: 10pt;
@@ -39,5 +59,10 @@ section h1 {
     }
     label:focus {
         color: $dark;
+    }
+}
+@media screen and (min-width: 1020px) {
+    form {
+        width: 750px;
     }
 }

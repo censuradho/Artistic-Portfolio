@@ -40,6 +40,8 @@ section {
   color: #fff;
   font-size: 1rem;
   padding: 8px 14px;
+  width: 80px;
+  height: 40px;
   align-self: flex-end;
   cursor: pointer; }
 
@@ -160,18 +162,29 @@ section h1 {
 .input-field {
   display: flex;
   flex-direction: column;
-  margin: 40px 20px; }
+  margin: 30px 20px;
+  position: relative; }
+  .input-field button {
+    position: absolute;
+    bottom: -40px;
+    right: 0; }
   .input-field input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
     box-shadow: 0 1px 0 #BDBDBD;
-    width: 330px;
+    width: 300px;
     padding: 10px 0;
     transition: 0.3s; }
   .input-field input:focus {
     border-bottom: 1px solid #616161;
     box-shadow: 0 1px 0 #616161;
     color: #616161; }
+  .input-field input:required:valid {
+    color: #81C784;
+    border-bottom: 1px solid #81C784; }
+  .input-field input:required:invalid {
+    color: #E57373;
+    border-bottom: 1px solid #E57373; }
   .input-field label {
     font-size: 10pt;
     color: #BDBDBD;
@@ -181,4 +194,9 @@ section h1 {
     font-weight: 400; }
   .input-field label:focus {
     color: #616161; }
+
+@media screen and (min-width: 1020px) {
+  form {
+    width: 750px; } }
+
 /*# sourceMappingURL=contact.css.map */
