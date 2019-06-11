@@ -216,7 +216,7 @@ section {
     height: 400px; } }
 [data-anime] {
   opacity: 0;
-  transition: 1s; }
+  transition: 4s; }
 
 [data-anime='cinco'] {
   transform: translate3d(0, 280px, 0); }
