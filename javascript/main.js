@@ -11,3 +11,20 @@ function closeMenu() {
 
 $btnOpen.addEventListener('click', openMenu);
 $btnClose.addEventListener('click', closeMenu);
+
+
+const elementos = document.querySelectorAll('[data-anime]');
+function animate() {
+    const windowTop = window.pageYOffset + 400;
+    elementos.forEach(function(e){
+        if(windowTop > e.offsetTop) {
+            e.classList.add('animate')
+        }else {
+            e.classList.remove('animate')
+        }
+    })
+}
+animate();
+window.addEventListener('scroll',function(){
+    animate();
+})

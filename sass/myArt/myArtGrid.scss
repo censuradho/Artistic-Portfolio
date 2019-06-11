@@ -19,12 +19,13 @@
     transition: 0.5s;
 }
 .crop:hover {
+    z-index: 1;
     transform: scale(1.4);
     width: 100%;
 }
 .crop:hover > img {
     transition: 9s;
-    position: relative;
+    position: absolute;
     object-position: 20%;
 }
 .grid-images img {

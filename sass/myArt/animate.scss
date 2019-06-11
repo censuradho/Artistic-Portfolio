@@ -1,0 +1,25 @@
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+[data-anime='cinco'] {
+    transform: translate3d(0,280px,0)
+}
+
+[data-anime='quatro'] {
+    transform: translate3d(0,240px,0)
+}
+[data-anime='tres'] {
+    transform: translate3d(0,200px,0)
+}
+[data-anime='dois'] {
+    transform: translate3d(0,160px,0)
+}
+[data-anime='um'] {
+    transform: translate3d(0,140px,0)
+}
+
+.animate {
+    opacity: 1;
+    transform: translate3d(0,0,0)
+}
