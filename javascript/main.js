@@ -28,3 +28,35 @@ animate();
 window.addEventListener('scroll',function(){
     animate();
 })
+
+
+
+//scroll suave link navbar
+const ulrCurrent = window.location.url
+        const menuItens = document.querySelectorAll('header a[href^="#"')
+    menuItens.forEach(itens=> {
+        itens.addEventListener('click', scrollToIdOnClick)
+    })
+
+    function scrollToIdOnClick(event) {
+        event.preventDefault();
+        const to = getElementByHref(event.target)
+        scrollToPosition(to)
+
+        function scrollToPosition() {
+            window.scroll({
+                top: to,
+                behavior: 'smooth'
+            }) 
+        }
+        
+        function getElementByHref(target) {
+            const id = target.getAttribute('href');
+            return document.querySelector(id).offsetTop;
+        }
+    }
+
+
+
+
+
