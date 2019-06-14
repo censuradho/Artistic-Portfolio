@@ -113,7 +113,7 @@ section {
     padding: 20px 26px;
     border-top: 1px solid #E0E0E0;
     color: #616161;
-    transition: 0.5s; }
+    transition: 0.3s; }
   .navegationMob a:hover {
     background-color: #E0E0E0; }
   .navegationMob .lastA {
@@ -132,8 +132,8 @@ section {
       text-align: center;
       width: 40px;
       cursor: pointer; }
-    .navegationMob .socialIcons .a:hover {
-      background: none; }
+  .navegationMob .fab:hover {
+    color: #BDBDBD !important; }
 
 .navegation_open {
   transform: translatex(0); }
@@ -171,11 +171,12 @@ section {
     width: 200px;
     border: 2px solid #272727;
     background-color: #272727;
-    color: #fff;
     font-family: 'Roboto',sans-serif;
     font-weight: 600;
     cursor: pointer;
     font-size: 1rem; }
+  .hero a {
+    color: #fff; }
 
 .grid {
   display: flex;
@@ -237,10 +238,30 @@ section {
   opacity: 1;
   transform: translate3d(0, 0, 0); }
 
-section.footer {
+.about img {
+  width: 300px;
+  padding: 30px 0; }
+.about p {
+  width: 80%; }
+
+footer {
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-color: #272727;
-  margin-bottom: 0 !important; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer p {
+    color: #fff; }
+  footer ul {
+    display: flex; }
+  footer a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    transition: .3s; }
+  footer a:hover {
+    color: #BDBDBD; }
 
 /*# sourceMappingURL=Artium.css.map */

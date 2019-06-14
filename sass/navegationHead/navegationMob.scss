@@ -13,7 +13,7 @@
         padding: 20px 26px;
         border-top: 1px solid $light;
         color: $dark;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     a:hover {
         background-color: $light;
@@ -37,10 +37,10 @@
             width: 40px;
             cursor: pointer;
         }
-        .a:hover {
-            background: none;
-        }
 
+    }
+    .fab:hover {
+        color: $primary-color-light !important;
     }
 }
 .navegation_open {
