@@ -1,7 +1,7 @@
 25/05/19 "Bug na propriedade do css, background-image".
 Estava tendo problemas em exibir pelo CSS a imagem do banner, pela propriedade background-image.
 
-26/05/19 "Bug na propriedade do css, background-image" CONCERTADO.
+26/05/19 "problema com na propriedade do css, background-image" CONCERTADO.
 A imagem não estava sendo exibida porque eu tinha que por o caminho absoluto da imagem que é background-image: url(https://raw.githubusercontent.com/censuradho/Artistic-Portfolio/master/imagens/banner.jpg),
 e eu tinha colocado o caminho do diretório, background-image: url(../../imagens/banner.jpg).
 
@@ -11,4 +11,4 @@ O segundo "..", saiu da pasta "sass" onde está todos os arquivos de estilo.scss
 em seguida entro na pasta das imagens e seleciono a imagem banner.jpg.
 
 - CONCERTO - 
-Vou no diretório imagens e clico com o botão direito do mouse em cima da imagem em questão, ponho ver imagem e copio a url "https://raw.githubusercontent.com/censuradho/Artistic-Portfolio/master/imagens/banner.jpg".
+vai no diretório imagens e clica com o botão direito do mouse em cima da imagem em questão, poẽm "ver imagem" e copia a url, que no meu caso é "https://raw.githubusercontent.com/censuradho/Artistic-Portfolio/master/imagens/banner.jpg".
