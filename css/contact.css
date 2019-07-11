@@ -51,19 +51,20 @@ section {
   transition: 0.3s;
   min-width: 40px; }
 
-.fa-bars {
-  border: none;
-  background: none;
-  font-size: 1.5rem;
-  cursor: pointer; }
-
-.btnMenu_open {
-  color: #616161; }
+  .btnMenu {
+    width: 30px;
+    height: 25px;
+    border: none;
+    background: none;
+    background-image: url(../imagens/menu-hamburguer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer}
 
 .btnMenu_close {
-  padding: 20px 26px;
-  color: #E0E0E0;
-  transform: translateX(-100); }
+  margin: 25px 26px;
+  fill: #E0E0E0;
+ }
 
 @media screen and (min-width: 700px) {
   #btnMenu_open {

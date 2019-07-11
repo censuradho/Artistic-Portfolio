@@ -52,19 +52,20 @@ section {
   transition: 0.3s;
   min-width: 40px; }
 
-.fa-bars {
-  border: none;
-  background: none;
-  font-size: 1.5rem;
-  cursor: pointer; }
-
-.btnMenu_open {
-  color: #616161; }
+  .btnMenu {
+    width: 30px;
+    height: 25px;
+    border: none;
+    background: none;
+    background-image: url(../imagens/menu-hamburguer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer}
 
 .btnMenu_close {
-  padding: 20px 26px;
-  color: #E0E0E0;
-  transform: translateX(-100); }
+  margin: 25px 26px;
+  fill: #E0E0E0;
+ }
 
 @media screen and (min-width: 700px) {
   #btnMenu_open {
@@ -80,11 +81,11 @@ section {
   background-color: #fff;
   z-index: 2;
   top: 0; }
-  .page-head h1 {
-    font-family: 'Tangerine', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 100;
-    color: #616161; }
+.page-head h1 {
+  font-family: 'Tangerine', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #616161; }
 
 .navegation ul {
   display: flex;
@@ -150,7 +151,7 @@ section {
   width: 100%;
   height: 500px;
   background-image: url(https://raw.githubusercontent.com/censuradho/Artistic-Portfolio/master/imagens/banner.jpg);
-  background-position-x: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -239,12 +240,18 @@ section {
   transform: translate3d(0, 0, 0); }
 
 .about img {
-  width: 300px;
+  width: 200px;
   padding: 30px 0; }
 .about p {
   width: 80%;
-  margin: 10px 0; }
-
+  margin: 10px 0;
+  line-height: 2rem;
+  text-align: center}
+@media screen and (min-width: 700px) {
+  .about p {
+    width: 550px;
+  }
+}
 footer {
   width: 100%;
   height: 100px;
