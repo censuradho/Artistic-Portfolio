@@ -33,7 +33,7 @@ window.addEventListener('scroll',function(){
 
 //scroll suave link navbar
 const ulrCurrent = window.location.url
-const menuItens = document.querySelectorAll('header a[href^="#"')
+const menuItens = document.querySelectorAll('a[href^="#"')
 
     menuItens.forEach(itens=> {
         itens.addEventListener('click', scrollToIdOnClick)
