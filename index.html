@@ -8,7 +8,7 @@
     <link rel="preload" href="imagens/banner.jpg" as="image">
     <link rel="stylesheet" href="css/Artium.css">
     <!-- Google Fonts - Roboto | Tangerine -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:300|Tangerine&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500|Tangerine&display=swap" rel="stylesheet"> 
     <!-- icones -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
@@ -21,7 +21,7 @@
                         <li><a href="#header">Home</a></li>
                         <li><a href="#myArt">My art</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="contact.html" class="lastA">Contat</a></li>
+                        <li><a href="#contact" class="lastA">Contat</a></li>
                     </ul>
                 </nav>  
             <img src="imagens/logo.svg" alt="Artium">
@@ -33,11 +33,15 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#myArt">My art</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="contact.html" class="lastA">Contact</a></li>
+                    <li><a href="#contact" class="lastA">Contact</a></li>
                 </ul>
                 <div class="socialIcons">
-                    <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/gustavo-dev-front/" target="_blank"></a>
-                    <a class="fab fa-twitter" href="https://twitter.com/Censuradho" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/gustavo-dev-front/" target="_blank">
+                        <button type="button" class="linkedin" ></button>
+                    </a>
+                    <a href="https://twitter.com/Censuradho" target="_blank">
+                        <button type="button" class="twitter"></button>
+                    </a>
                 </div>
             </nav>        
     </header>
@@ -68,21 +72,48 @@
                         <img src="imagens/picture5.jpg" alt="painting of cabin">
                 </div>  
             </div>
-            <button class="btnSection">See more</button>
+            <button class="btnSection">See</button>
         </div>
         </section>
         <section class="about" id="about">
             <h3>About me</h3>
-            <img src="imagens/profile.jpg" alt="Photo of a Painter">
-            <p>Quisque neque ante, finibus placerat pharetra nec, malesuada ac diam. Nulla metus risus, efficitur non efficitur nec, consectetur ac nunc. Donec eget fermentum ligula. Donec at lorem eget libero ornare interdum vitae eu odio. In non enim aliquam, ultrices ipsum et, luctus odio. Curabitur non dapibus ligula, porttitor cursus neque. Nullam hendrerit, sem eu vehicula luctus, orci est tempor arcu, eget suscipit massa neque vel leo.</p>
+            <div>
+                <img src="imagens/profile.jpg" alt="Photo of a Painter">
+                <p>Quisque neque ante, finibus placerat pharetra nec, malesuada ac diam. Nulla metus risus, efficitur non efficitur nec, consectetur ac nunc. Donec eget fermentum ligula. Donec at lorem eget libero ornare interdum vitae eu odio. In non enim aliquam, ultrices ipsum et, luctus odio. Curabitur non dapibus ligula, porttitor cursus neque. Nullam hendrerit, sem eu vehicula luctus, orci est tempor arcu, eget suscipit massa neque vel leo.</p>
+            </div>
         </section>
+        <div class="container-contact">
+                <section id="contact">
+                    <h3>Contact</h3>
+                <form class="form">
+                    <div class="input-field">
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="name">Entre here your name</label>
+                    </div>
+                    <div class="input-field">
+                            <input type="email" id="email" placeholder="E-mail" required="required" pattern="[+ a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <label for="email">Entre here your E-mail</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="message" placeholder="Message">
+                        <label for="message">Entre here your Message</label>
+                        <button class="btnSection">send</button>
+                </div>
+                </form>
+                </section>
+            </div>
     </main>
     <footer class="footer">
-        <p>gustavoleiteoliveira800@gmail.com</p>
-        <ul>
-            <li><a href="https://twitter.com/Censuradho" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.linkedin.com/in/gustavo-dev-front/" target="_blank">Twitter</a></li>
-        </ul>
+        <div class="top-footer"><img src="imagens/logoF.svg" alt="artium logo"></div>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/gustavo-dev-front/" target="_blank">
+                <button type="button" class="linkedinF" ></button>
+            </a>
+            <a href="https://twitter.com/Censuradho" target="_blank">
+                <button type="button" class="twitterF"></button>
+            </a>
+        </div>
+        <p><span>Powered by 42_EStúdio.</span> develo.front@gmail.com</p>
     </footer>
     <script src="javascript/main.js"></script>
 </body>
